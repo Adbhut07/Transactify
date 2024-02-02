@@ -1,7 +1,9 @@
 // backend/index.js
 const express = require('express');
 const cors = require("cors");
+require('dotenv').config();
 const rootRouter = require("./routes/index");
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
