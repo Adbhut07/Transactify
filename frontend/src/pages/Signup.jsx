@@ -4,6 +4,7 @@ import { SubHeading } from '../components/SubHeading';
 import { Heading }from '../components/Heading'
 import { InputBox } from '../components/InputBox'
 import { Button } from '../components/Button'
+import { BottomWarning } from '../components/BottomWarning'
 import axios from 'axios';
 
 export const Signup = ()=> {
@@ -47,6 +48,7 @@ export const Signup = ()=> {
                 navigate("/dashboard")
             }} label={"Sign up"} />
           </div>
+          <BottomWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/signin"}/>
         </div>
       </div>
     </div>
